@@ -3,14 +3,14 @@ package com.example.msemail.models;
 import com.example.msemail.enums.StatusEmail;
 import jakarta.persistence.*;
 import lombok.Data;
-import lombok.Generated;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 @Data
 @Entity
 @Table(name = "TB_EMAIL")
-public class EmailModels implements Serializable {
+public class EmailModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
