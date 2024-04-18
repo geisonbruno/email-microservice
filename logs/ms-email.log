@@ -1,0 +1,33 @@
+2024-04-18T00:36:41,819 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-04-18T00:36:41,901 INFO  com.example.msemail.MsEmailApplication - Starting MsEmailApplication using Java 21 with PID 2648 (C:\Users\Geison Bruno\Projetos\ms-email\target\classes started by Geison Bruno in C:\Users\Geison Bruno\Projetos\ms-email)
+2024-04-18T00:36:41,906 INFO  com.example.msemail.MsEmailApplication - No active profile set, falling back to 1 default profile: "default"
+2024-04-18T00:36:43,566 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-04-18T00:36:43,688 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interface.
+2024-04-18T00:36:44,757 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-04-18T00:36:44,784 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-04-18T00:36:44,787 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-04-18T00:36:44,787 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-18T00:36:44,902 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-04-18T00:36:44,902 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2896 ms
+2024-04-18T00:36:45,253 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-04-18T00:36:45,353 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-04-18T00:36:45,413 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-04-18T00:36:45,732 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-04-18T00:36:45,776 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-04-18T00:36:46,153 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b28cff
+2024-04-18T00:36:46,155 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-04-18T00:36:47,457 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-04-18T00:36:47,508 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18T00:36:47,971 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-04-18T00:36:48,677 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-04-18T00:36:48,697 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-04-18T00:36:48,702 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [shrimp.rmq.cloudamqp.com:5671]
+2024-04-18T00:36:50,005 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5f6b1f19:0/SimpleConnection@5122387 [delegate=amqp://imzzrrsj@3.132.110.14:5671/imzzrrsj, localPort=56246]
+2024-04-18T00:36:51,046 INFO  com.example.msemail.MsEmailApplication - Started MsEmailApplication in 10.282 seconds (process running for 12.55)
+2024-04-18T00:37:10,977 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-18T00:37:10,978 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-04-18T00:37:10,980 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-04-18T00:37:11,033 INFO  com.example.msemail.controllers.EmailController - INFO
+2024-04-18T00:37:11,033 WARN  com.example.msemail.controllers.EmailController - WARN
+2024-04-18T00:37:11,033 ERROR com.example.msemail.controllers.EmailController - ERROR
+2024-04-18T00:37:11,033 FATAL com.example.msemail.controllers.EmailController - FATAL
