@@ -31,3 +31,12 @@
 2024-04-18T00:37:11,033 WARN  com.example.msemail.controllers.EmailController - WARN
 2024-04-18T00:37:11,033 ERROR com.example.msemail.controllers.EmailController - ERROR
 2024-04-18T00:37:11,033 FATAL com.example.msemail.controllers.EmailController - FATAL
+2024-04-18T01:16:41,505 WARN  com.rabbitmq.client.impl.ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+2024-04-18T01:16:41,843 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Restarting Consumer@c1d9c40: tags=[[amq.ctag-3brxyBs7PhBVdHVPesgRvw]], channel=Cached Rabbit Channel: AMQChannel(amqp://imzzrrsj@3.132.110.14:5671/imzzrrsj,1), conn: Proxy@581f1f40 Shared Rabbit Connection: SimpleConnection@5122387 [delegate=amqp://imzzrrsj@3.132.110.14:5671/imzzrrsj, localPort=56246], acknowledgeMode=AUTO local queue size=0
+2024-04-18T01:16:41,849 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [shrimp.rmq.cloudamqp.com:5671]
+2024-04-18T01:16:43,099 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5f6b1f19:1/SimpleConnection@fd1a2f6 [delegate=amqp://imzzrrsj@3.132.110.14:5671/imzzrrsj, localPort=56803]
+2024-04-18T02:57:30,141 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2024-04-18T02:57:30,455 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2024-04-18T02:57:30,785 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-04-18T02:57:30,788 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-04-18T02:57:30,794 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
