@@ -1,6 +1,4 @@
 package com.example.msemail.controllers;
-
-
 import com.example.msemail.dtos.EmailDto;
 import com.example.msemail.models.EmailModel;
 import com.example.msemail.services.EmailService;
@@ -16,16 +14,14 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 
 import java.util.Optional;
 import java.util.UUID;
 
-
-// Anotação @RestController:
-//indica que a classe EmailController é um controller REST, que vai responder a requisições HTTP.
+@Tag(name = "Email Controller", description = "Controller responsável pela gestão de emails")
 @RestController
 public class EmailController {
-
     Logger logger = LogManager.getLogger(EmailController.class);
 
     @Autowired
