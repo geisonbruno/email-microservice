@@ -9,10 +9,12 @@
 This project is a Microservice built using **Java, Java Spring, MySQL as a database.**
 
 # About the project
-___
-This microservice is designed to centralize the sending of emails to any service within a microservices architecture. Using the Spring Boot framework together with Spring Email, it offers a robust and efficient solution for managing email communications.
 
-Initially, the microservice was configured to operate with Gmail's SMTP, handling requests synchronously through a REST API. To increase efficiency and handle scalable demands, it has been evolved to support asynchronous processing, using RabbitMQ for message management.
+Este microsserviço foi desenvolvido para centralizar o envio de e-mails para qualquer serviço dentro de uma arquitetura de microsserviços. Utilizando o framework Spring Boot junto com Spring Email, ele oferece uma solução eficiente para o gerenciamento de comunicações por e-mail.
+
+Inicialmente, o microsserviço foi configurado para operar com SMTP do Gmail, processando as requisições de forma síncrona por meio de uma API REST. Com o objetivo de aumentar expandir meus conhecimentos e suportar demandas escaláveis, ele foi evoluído para um modelo mais avançado, passando a utilizar AWS-SES para o envio de e-mails e RabbitMQ para o processamento assíncrono de mensagens.
+
+Tive experiência prática nesse projeto de estudo, evoluindo o microsserviço de e-mail desde sua configuração inicial até sua evolução para um modelo escalável e orientado a eventos.
 
 ## Table of Contents
 ***
