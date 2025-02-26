@@ -1,6 +1,5 @@
 # Email Microservice
 
-<img width="1089" alt="ms-email" src="https://github.com/user-attachments/assets/ae5d7d13-6e85-422e-b34f-466c99495e34">
 
 ***
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
