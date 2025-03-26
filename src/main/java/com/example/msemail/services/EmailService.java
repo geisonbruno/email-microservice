@@ -1,7 +1,5 @@
 package com.example.msemail.services;
 
-import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
-import com.amazonaws.services.simpleemail.model.*;
 import com.example.msemail.enums.StatusEmail;
 import com.example.msemail.models.EmailModel;
 import com.example.msemail.repositories.EmailRepository;
@@ -12,6 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import software.amazon.awssdk.services.ses.SesClient;
+import software.amazon.awssdk.services.ses.model.*;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
@@ -26,32 +26,33 @@ public class EmailService {
     private EmailRepository emailRepository;
 
     @Autowired
-    private AmazonSimpleEmailService sesClient;
+    private SesClient sesClient;
 
     @Transactional
     public EmailModel sendEmail(EmailModel emailModel) {
         emailModel.setSendDateEmail(LocalDateTime.now());
 
         try {
-            log.info("Tentando enviar email para: " + emailModel.getEmailTo());
+            log.info("Tentando enviar email para: {}", emailModel.getEmailTo());
 
-            SendEmailRequest request = new SendEmailRequest()
-                    .withSource(emailModel.getEmailFrom())
-                    .withDestination(new Destination().withToAddresses(emailModel.getEmailTo()))
-                    .withMessage(new Message()
-                            .withSubject(new Content().withCharset("UTF-8").withData(emailModel.getSubject()))
-                            .withBody(new Body()
-                                    .withText(new Content().withCharset("UTF-8").withData(emailModel.getText()))
-                            )
-                    );
+            SendEmailRequest request = SendEmailRequest.builder()
+                    .source(emailModel.getEmailFrom())
+                    .destination(Destination.builder().toAddresses(emailModel.getEmailTo()).build())
+                    .message(Message.builder()
+                            .subject(Content.builder().data(emailModel.getSubject()).charset("UTF-8").build())
+                            .body(Body.builder()
+                                    .text(Content.builder().data(emailModel.getText()).charset("UTF-8").build())
+                                    .build())
+                            .build())
+                    .build();
 
-            sesClient.sendEmail(request);
+            sesClient.sendEmail(request); // Envia o email
             emailModel.setStatusEmail(StatusEmail.SENT);
-            log.info("Email enviado com sucesso para: " + emailModel.getEmailTo());
+            log.info("Email enviado com sucesso para: {}", emailModel.getEmailTo());
 
-        } catch (Exception e) {
+        } catch (SesException e) {
             emailModel.setStatusEmail(StatusEmail.ERROR);
-            log.error("Falha ao enviar email para: " + emailModel.getEmailTo(), e);
+            log.error("Falha ao enviar email para: {} - Motivo: {}", emailModel.getEmailTo(), e.awsErrorDetails().errorMessage());
         }
 
         return emailRepository.save(emailModel);
