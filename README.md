@@ -7,9 +7,7 @@
 
 # Sobre o projeto
 
-Este microsserviço foi desenvolvido para centralizar o envio de e-mails para qualquer serviço dentro de uma arquitetura de microsserviços. Utilizando o framework Spring Boot junto com Spring Email, ele oferece uma solução eficiente para o gerenciamento de comunicações por e-mail.
-
-Inicialmente, o microsserviço foi configurado para operar com SMTP do Gmail, processando as requisições de forma síncrona por meio de uma API REST. Com o objetivo de aumentar e expandir meus conhecimentos e suportar demandas escaláveis, ele foi evoluído para um modelo mais avançado, passando a utilizar AWS-SES para o envio de e-mails e RabbitMQ para o processamento assíncrono de mensagens.
+Inicialmente, o microsserviço foi configurado para operar com SMTP do Gmail, processando as requisições de forma síncrona por meio de uma API REST. Com o objetivo de expandir meus conhecimentos, ele foi evoluído para um modelo mais escalável, passando a utilizar AWS-SES para o envio de e-mails e RabbitMQ para o processamento assíncrono de mensagens.
 
 Tive experiência prática nesse projeto de estudo, evoluindo o microsserviço de e-mail desde sua configuração inicial até sua evolução para um modelo escalável e orientado a eventos.
 
