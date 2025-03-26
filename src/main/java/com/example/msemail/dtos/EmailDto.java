@@ -27,6 +27,4 @@ public class EmailDto {
         BeanUtils.copyProperties(this, emailModel);
         return emailModel;
     }
-
-
 }
