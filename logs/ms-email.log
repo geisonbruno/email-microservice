@@ -2328,3 +2328,253 @@ at com.example.msemail.MsEmailApplication.main(MsEmailApplication.java:18)
 2025-03-26T13:53:58,496 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-03-26T13:53:58,515 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-03-26T13:53:58,523 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26T14:23:43,135 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26T14:23:43,171 INFO  com.example.msemail.MsEmailApplication - Starting MsEmailApplication using Java 23.0.1 with PID 26360 (C:\Users\geiso\Projetos\email-microservice\target\classes started by geiso in C:\Users\geiso\Projetos\email-microservice)
+2025-03-26T14:23:43,173 INFO  com.example.msemail.MsEmailApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26T14:23:43,803 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26T14:23:43,841 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2025-03-26T14:23:44,220 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26T14:23:44,239 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26T14:23:44,241 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26T14:23:44,241 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-26T14:23:44,281 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26T14:23:44,282 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1073 ms
+2025-03-26T14:23:44,395 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26T14:23:44,455 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-26T14:23:44,487 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26T14:23:44,657 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26T14:23:44,683 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26T14:23:44,842 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62ab5e63
+2025-03-26T14:23:44,843 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26T14:23:44,883 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-26T14:23:45,495 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26T14:23:45,545 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T14:23:45,811 WARN  com.amazonaws.util.VersionInfoUtils - The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:2389)
+at com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at com.amazonaws.ClientConfiguration.<clinit>(ClientConfiguration.java:95)
+at com.amazonaws.ClientConfigurationFactory.getDefaultConfig(ClientConfigurationFactory.java:46)
+at com.amazonaws.ClientConfigurationFactory.getConfig(ClientConfigurationFactory.java:36)
+at com.amazonaws.client.builder.AwsClientBuilder.resolveClientConfiguration(AwsClientBuilder.java:169)
+at com.amazonaws.client.builder.AwsClientBuilder.access$000(AwsClientBuilder.java:54)
+at com.amazonaws.client.builder.AwsClientBuilder$SyncBuilderParams.<init>(AwsClientBuilder.java:505)
+at com.amazonaws.client.builder.AwsClientBuilder.getSyncClientParams(AwsClientBuilder.java:441)
+at com.amazonaws.client.builder.AwsSyncClientBuilder.build(AwsSyncClientBuilder.java:46)
+at com.example.msemail.configs.AwsSesConfig.amazonSimpleEmailService(AwsSesConfig.java:30)
+at com.example.msemail.configs.AwsSesConfig$$SpringCGLIB$$0.CGLIB$amazonSimpleEmailService$0(<generated>)
+at com.example.msemail.configs.AwsSesConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+at com.example.msemail.configs.AwsSesConfig$$SpringCGLIB$$0.amazonSimpleEmailService(<generated>)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767)
+at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1419)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599)
+at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+at com.example.msemail.MsEmailApplication.main(MsEmailApplication.java:18)
+2025-03-26T14:23:46,207 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26T14:23:46,689 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26T14:23:46,701 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-26T14:23:46,704 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [campbell.lmq.cloudamqp.com:5671]
+2025-03-26T14:23:48,168 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#61f18997:0/SimpleConnection@23317e8a [delegate=amqp://qnxtelir@52.14.80.112:5671/qnxtelir, localPort=65408]
+2025-03-26T14:23:49,476 INFO  com.example.msemail.MsEmailApplication - Started MsEmailApplication in 6.684 seconds (process running for 7.414)
+2025-03-26T14:27:14,933 INFO  com.example.msemail.services.EmailService - Tentando enviar email para: geisonbruno0@hotmail.com
+2025-03-26T14:27:15,419 ERROR com.example.msemail.services.EmailService - Falha ao enviar email para: geisonbruno0@hotmail.com
+com.amazonaws.services.simpleemail.model.AmazonSimpleEmailServiceException: User `arn:aws:iam::637423625435:user/geisonbruno-email-microservice' is not authorized to perform `ses:SendEmail' on resource `arn:aws:ses:sa-east-1:637423625435:identity/geisonbruno0@gmail.com' (Service: AmazonSimpleEmailService; Status Code: 403; Error Code: AccessDenied; Request ID: e9042bb9-e4e0-4ca7-bf45-d6839bef0add; Proxy: null)
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleErrorResponse(AmazonHttpClient.java:1912) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.handleServiceErrorResponse(AmazonHttpClient.java:1450) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1419) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:1183) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:838) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:805) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:779) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$500(AmazonHttpClient.java:735) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:717) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:581) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:559) ~[aws-java-sdk-core-1.12.782.jar:?]
+	at com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClient.doInvoke(AmazonSimpleEmailServiceClient.java:6005) ~[aws-java-sdk-ses-1.12.782.jar:?]
+	at com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClient.invoke(AmazonSimpleEmailServiceClient.java:5972) ~[aws-java-sdk-ses-1.12.782.jar:?]
+	at com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClient.invoke(AmazonSimpleEmailServiceClient.java:5961) ~[aws-java-sdk-ses-1.12.782.jar:?]
+	at com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClient.executeSendEmail(AmazonSimpleEmailServiceClient.java:4095) ~[aws-java-sdk-ses-1.12.782.jar:?]
+	at com.amazonaws.services.simpleemail.AmazonSimpleEmailServiceClient.sendEmail(AmazonSimpleEmailServiceClient.java:4064) ~[aws-java-sdk-ses-1.12.782.jar:?]
+	at com.example.msemail.services.EmailService.sendEmail(EmailService.java:48) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:351) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.5.jar:6.1.5]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.5.jar:6.1.5]
+	at com.example.msemail.services.EmailService$$SpringCGLIB$$0.sendEmail(<generated>) ~[classes/:?]
+	at com.example.msemail.consumers.EmailConsumer.listen(EmailConsumer.java:22) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:169) ~[spring-messaging-6.1.5.jar:6.1.5]
+	at org.springframework.amqp.rabbit.listener.adapter.KotlinAwareInvocableHandlerMethod.doInvoke(KotlinAwareInvocableHandlerMethod.java:45) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.messaging.handler.invocation.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:119) ~[spring-messaging-6.1.5.jar:6.1.5]
+	at org.springframework.amqp.rabbit.listener.adapter.HandlerAdapter.invoke(HandlerAdapter.java:75) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandler(MessagingMessageListenerAdapter.java:278) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:225) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:149) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1682) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1604) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1592) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1583) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListenerAndHandleException(AbstractMessageListenerContainer.java:1528) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.lambda$executeListener$8(AbstractMessageListenerContainer.java:1506) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at io.micrometer.observation.Observation.observe(Observation.java:499) ~[micrometer-observation-1.12.4.jar:1.12.4]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1506) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:1084) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:1020) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1422) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1324) ~[spring-rabbit-3.1.3.jar:3.1.3]
+	at java.base/java.lang.Thread.run(Thread.java:1575) [?:?]
+2025-03-26T14:32:34,038 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-03-26T14:32:34,522 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-03-26T14:32:34,951 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T14:32:34,954 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26T14:32:34,958 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26T14:53:31,777 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26T14:53:31,808 INFO  com.example.msemail.MsEmailApplication - Starting MsEmailApplication using Java 23.0.1 with PID 29144 (C:\Users\geiso\Projetos\email-microservice\target\classes started by geiso in C:\Users\geiso\Projetos\email-microservice)
+2025-03-26T14:53:31,810 INFO  com.example.msemail.MsEmailApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26T14:53:32,507 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26T14:53:32,546 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
+2025-03-26T14:53:32,923 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26T14:53:32,942 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26T14:53:32,944 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26T14:53:32,944 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-26T14:53:32,988 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26T14:53:32,988 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1141 ms
+2025-03-26T14:53:33,098 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26T14:53:33,150 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-26T14:53:33,185 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26T14:53:33,359 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26T14:53:33,382 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26T14:53:33,520 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5891b7c5
+2025-03-26T14:53:33,521 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26T14:53:33,558 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-26T14:53:34,183 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26T14:53:34,237 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T14:53:34,402 WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'emailConsumer': Unsatisfied dependency expressed through field 'emailService': Error creating bean with name 'emailService': Unsatisfied dependency expressed through field 'sesClient': No qualifying bean of type 'com.amazonaws.services.simpleemail.AmazonSimpleEmailService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2025-03-26T14:53:34,403 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T14:53:34,404 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26T14:53:34,408 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26T14:53:34,410 INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-26T14:53:34,419 INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-26T14:53:34,432 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sesClient in com.example.msemail.services.EmailService required a bean of type 'com.amazonaws.services.simpleemail.AmazonSimpleEmailService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.amazonaws.services.simpleemail.AmazonSimpleEmailService' in your configuration.
+
+2025-03-26T17:53:14,287 INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-26T17:53:14,318 INFO  com.example.msemail.MsEmailApplication - Starting MsEmailApplication using Java 23.0.1 with PID 34612 (C:\Users\geiso\Projetos\email-microservice\target\classes started by geiso in C:\Users\geiso\Projetos\email-microservice)
+2025-03-26T17:53:14,320 INFO  com.example.msemail.MsEmailApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-26T17:53:14,926 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26T17:53:14,962 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2025-03-26T17:53:15,336 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-26T17:53:15,350 INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26T17:53:15,351 INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26T17:53:15,351 INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-26T17:53:15,391 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26T17:53:15,392 INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1039 ms
+2025-03-26T17:53:15,493 INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-26T17:53:15,537 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-03-26T17:53:15,569 INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-03-26T17:53:15,749 INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-26T17:53:15,773 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26T17:53:15,911 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7858d31d
+2025-03-26T17:53:15,912 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26T17:53:15,952 WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-26T17:53:16,532 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-26T17:53:16,584 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T17:53:17,378 WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26T17:53:17,806 INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26T17:53:17,819 INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-26T17:53:17,821 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Attempting to connect to: [campbell.lmq.cloudamqp.com:5671]
+2025-03-26T17:53:19,169 INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#437ac2dc:0/SimpleConnection@40e420fe [delegate=amqp://qnxtelir@52.14.80.112:5671/qnxtelir, localPort=58798]
+2025-03-26T17:53:20,338 INFO  com.example.msemail.MsEmailApplication - Started MsEmailApplication in 6.356 seconds (process running for 8.735)
+2025-03-26T17:53:20,384 INFO  com.example.msemail.services.EmailService - Tentando enviar email para: geisonbruno0@hotmail.com
+2025-03-26T17:53:21,026 INFO  com.example.msemail.services.EmailService - Email enviado com sucesso para: geisonbruno0@hotmail.com
+2025-03-26T17:54:06,373 INFO  com.example.msemail.services.EmailService - Tentando enviar email para: geisonbruno0@hotmail.com
+2025-03-26T17:54:06,619 INFO  com.example.msemail.services.EmailService - Email enviado com sucesso para: geisonbruno0@hotmail.com
+2025-03-26T18:09:14,194 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26T18:09:14,196 INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26T18:09:14,203 INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-03-26T18:09:14,263 INFO  com.example.msemail.controllers.EmailController - INFO
+2025-03-26T18:09:14,263 WARN  com.example.msemail.controllers.EmailController - WARN
+2025-03-26T18:09:14,263 ERROR com.example.msemail.controllers.EmailController - ERROR
+2025-03-26T18:09:14,263 FATAL com.example.msemail.controllers.EmailController - FATAL
+2025-03-26T18:24:00,443 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Waiting for workers to finish.
+2025-03-26T18:24:00,971 INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+2025-03-26T18:24:01,453 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26T18:24:01,475 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26T18:24:01,484 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
